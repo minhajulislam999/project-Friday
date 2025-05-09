@@ -42,39 +42,39 @@ d = d + d;
 
 const fruits = ["Apple", "Banana", "Cherry"];
 
-fruits[0]="Mango";
+fruits[0] = "Mango";
 
-document.getElementById("statement4").innerHTML=fruits;
+document.getElementById("statement4").innerHTML = fruits;
 
-const colors=["Red", "Green", "Blue"];
+const colors = ["Red", "Green", "Blue"];
 
 colors.push("Yellow");
 
-document.getElementById("statement5").innerHTML=colors;
+document.getElementById("statement5").innerHTML = colors;
 
-const animals=["Cat", "Dog", "Horse"];
+const animals = ["Cat", "Dog", "Horse"];
 
-animals[1]="Tiger";
+animals[1] = "Tiger";
 
 animals.push("Elephant");
 
 
-const countries=["Bangladesh", "Pakistan", "Afganistan"]
+const countries = ["Bangladesh", "Pakistan", "Afganistan"]
 
-countries[0]="islami amirat";
+countries[0] = "islami amirat";
 
 countries.push("Soudi arabia");
 
-document.getElementById("statement6").innerHTML=animals.join(",")+"<br>"+ countries.join(",");
+document.getElementById("statement6").innerHTML = animals.join(",") + "<br>" + countries.join(",");
 
 
 
 //✅ প্র্যাকটিস ১: const এর Block Scope
 
-const city="Dhaka";
+const city = "Dhaka";
 
 {
-    const city="Chittagong";
+    const city = "Chittagong";
 
     console.log("Inside block:", city);
 }
@@ -84,10 +84,10 @@ console.log("Outside block:", city);
 //✅ প্র্যাকটিস ২: let এর সাথেও একই নিয়ম
 
 
-let num=5;
+let num = 5;
 
 {
-    let num=100;
+    let num = 100;
 
     console.log("Inside block:", num);
 }
@@ -105,13 +105,13 @@ const e = "Outside";
     document.getElementById("block1").innerHTML = e;
 }
 
-document.getElementById("block2").innerHTML= e;
+document.getElementById("block2").innerHTML = e;
 
 
 //✅ প্র্যাকটিস ৪: শুধুমাত্র এক্সপেরিমেন্ট
 
 {
-    const myName="Minhaj";
+    const myName = "Minhaj";
     console.log("Inside:", myName);
 }
 
@@ -122,33 +122,33 @@ document.getElementById("block2").innerHTML= e;
 
 
 
-let age=25;
+let age = 25;
 
 //let age =30; Error
 
-const shohor="Dhaka";
+const shohor = "Dhaka";
 
 //const city = "chittagong"; Error
 
 
 //✅ প্র্যাকটিস ৩: const Variable Reassign করা যায় না
 
-const country1="Bangladesh";
+const country1 = "Bangladesh";
 
 //country1 = "India"; Error
 
 //✅ প্র্যাকটিস ৪: আলাদা Block-এ const বারবার declare করা যায়
 
-const hobby ="Reading";
+const hobby = "Reading";
 
 {
-    const hobby="Codding";
+    const hobby = "Codding";
 
     console.log("Block 1:", hobby)
 }
 
 {
-    const hobby= "Gaming";
+    const hobby = "Gaming";
     console.log("Block 2:", hobby);
 }
 
@@ -177,11 +177,11 @@ console.log("Outside:", hobby);
 
 const a2 = 20;
 
-const b2=10;
+const b2 = 10;
 
 const x2 = a2 + b2;
 
-document.getElementById("arithmetic-operations").innerHTML=x2;
+document.getElementById("arithmetic-operations").innerHTML = x2;
 
 
 //লিখো:
@@ -190,7 +190,7 @@ document.getElementById("arithmetic-operations").innerHTML=x2;
 const a3 = 15;
 const b3 = 5;
 
-const x4= a3 - b3;
+const x4 = a3 - b3;
 
 console.log(x4);
 
@@ -213,7 +213,7 @@ console.log(x4);
 //a = 10 এবং b = 3 হলে, x তে a % b (modulus অর্থাৎ ভাগশেষ) রাখো।
 
 {
-    const a=10;
+    const a = 10;
     const b = 3;
 
     const x = a / b;
@@ -240,13 +240,70 @@ console.log(x4);
 //একটি এক্সপ্রেশন (100 + 50) * 2 তৈরি করে result নামক ভেরিয়েবলে রাখো।
 
 {
-    const a = (100/50)*2;
-   
+    const a = 100 / 50 * 2;
+
     const result = a;
 
     console.log(result);
 
 }
+
+
+//লিখো:
+//a = 10, b = 5, c = 2 হলে, (a + b) / c এক্সপ্রেশন লিখে x তে রাখো।
+
+
+{
+    const a = 10;
+    const b = 5;
+    const c = 2;
+
+    const x = (a + b) / c;
+
+    console.log(x);
+}
+
+
+//লিখো:
+//a = 3, b = 4, c = 2 হলে, a * b + c এক্সপ্রেশন লিখে result এ রাখো।
+
+{
+    const a = 3;
+    const b = 4;
+    const c = 2;
+
+    // const result = (a * b)+2;
+    const result = a * b + 2;
+
+    console.log(result);
+}
+
+
+//লিখো:
+//ইউজার যদি x = 5 + 10 * 2 লেখে, তাহলে x এর মান কত হবে? ব্যাখ্যা করো।
+
+{
+
+    const x = 5 + 10 * 2;
+
+    console.log(x);
+
+}
+
+
+//লিখো:
+//x = 100, এখন x এর সাথে 50 যোগ করো এবং নতুন মান আবার x এ রাখো (অর্থাৎ x = x + 50 টাইপ)।
+
+
+{
+    let x = 100;
+
+    x = x + 50;
+
+    console.log(x);
+
+}
+
 
 
 
