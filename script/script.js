@@ -37,4 +37,33 @@ d = 7;
 
 d = d + d;
 
-alert(d);
+// alert(d);
+
+
+const fruits = ["Apple", "Banana", "Cherry"];
+
+fruits[0]="Mango";
+
+document.getElementById("statement4").innerHTML=fruits;
+
+const colors=["Red", "Green", "Blue"];
+
+colors.push("Yellow");
+
+document.getElementById("statement5").innerHTML=colors;
+
+const animals=["Cat", "Dog", "Horse"];
+
+animals[1]="Tiger";
+
+animals.push("Elephant");
+
+
+const countries=["Bangladesh", "Pakistan", "Afganistan"]
+
+countries[0]="islami amirat";
+
+countries.push("Soudi arabia");
+
+document.getElementById("statement6").innerHTML=animals+"<br>"+ countries;
+
