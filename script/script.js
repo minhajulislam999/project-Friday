@@ -68,3 +68,52 @@ countries.push("Soudi arabia");
 document.getElementById("statement6").innerHTML=animals.join(",")+"<br>"+ countries.join(",");
 
 
+
+//✅ প্র্যাকটিস ১: const এর Block Scope
+
+const city="Dhaka";
+
+{
+    const city="Chittagong";
+
+    console.log("Inside block:", city);
+}
+
+console.log("Outside block:", city);
+
+//✅ প্র্যাকটিস ২: let এর সাথেও একই নিয়ম
+
+
+let num=5;
+
+{
+    let num=100;
+
+    console.log("Inside block:", num);
+}
+
+console.log("Outside block:", num);
+
+// প্র্যাকটিস ৩: const দিয়ে দুই জায়গায় x ডিক্লেয়ার করো
+
+
+const e = "Outside";
+
+{
+    const e = "Inside";
+
+    document.getElementById("block1").innerHTML = e;
+}
+
+document.getElementById("block2").innerHTML= e;
+
+
+//✅ প্র্যাকটিস ৪: শুধুমাত্র এক্সপেরিমেন্ট
+
+{
+    const myName="Minhaj";
+    console.log("Inside:", myName);
+}
+
+console.log("Outside:", myName); //eta referenceError dibe;
+
