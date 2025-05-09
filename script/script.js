@@ -65,5 +65,6 @@ countries[0]="islami amirat";
 
 countries.push("Soudi arabia");
 
-document.getElementById("statement6").innerHTML=animals+"<br>"+ countries;
+document.getElementById("statement6").innerHTML=animals.join(",")+"<br>"+ countries.join(",");
+
 
