@@ -172,3 +172,81 @@ console.log("Outside:", hobby);
 // console.log(b1);
 // const b1 =10;
 
+
+//🔢 Arithmetic Operations Practice (JavaScript)
+
+const a2 = 20;
+
+const b2=10;
+
+const x2 = a2 + b2;
+
+document.getElementById("arithmetic-operations").innerHTML=x2;
+
+
+//লিখো:
+// a = 15 এবং b = 5 হলে, x তে a - b সংরক্ষণ করো।
+
+const a3 = 15;
+const b3 = 5;
+
+const x4= a3 - b3;
+
+console.log(x4);
+
+
+//লিখো:
+//a = 7 এবং b = 6 হলে, x তে গুণফল রাখো।
+
+{
+    const a = 7;
+
+    const b = 6;
+
+    const x = a * b;
+
+    console.log(x);
+}
+
+
+//লিখো:
+//a = 10 এবং b = 3 হলে, x তে a % b (modulus অর্থাৎ ভাগশেষ) রাখো।
+
+{
+    const a=10;
+    const b = 3;
+
+    const x = a / b;
+
+    console.log(x);
+
+}
+
+
+//লিখো:
+//a = 10 এবং b = 3 হলে, x তে a % b (modulus অর্থাৎ ভাগশেষ) রাখো।
+
+{
+    const a = 10;
+    const b = 3;
+
+    const x = a % b;
+
+    console.log(x);
+}
+
+
+//লিখো:
+//একটি এক্সপ্রেশন (100 + 50) * 2 তৈরি করে result নামক ভেরিয়েবলে রাখো।
+
+{
+    const a = (100/50);
+    console.log(a)
+
+
+    const result = a;
+
+    console.log(result);
+
+}
+
