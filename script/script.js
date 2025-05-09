@@ -115,5 +115,60 @@ document.getElementById("block2").innerHTML= e;
     console.log("Inside:", myName);
 }
 
-console.log("Outside:", myName); //eta referenceError dibe;
+//console.log("Outside:", myName); //eta referenceError dibe;
+
+
+//✅ প্র্যাকটিস ২: let বা const দিয়ে একই স্কোপে Redeclare করা যায় না
+
+
+
+let age=25;
+
+//let age =30; Error
+
+const shohor="Dhaka";
+
+//const city = "chittagong"; Error
+
+
+//✅ প্র্যাকটিস ৩: const Variable Reassign করা যায় না
+
+const country1="Bangladesh";
+
+//country1 = "India"; Error
+
+//✅ প্র্যাকটিস ৪: আলাদা Block-এ const বারবার declare করা যায়
+
+const hobby ="Reading";
+
+{
+    const hobby="Codding";
+
+    console.log("Block 1:", hobby)
+}
+
+{
+    const hobby= "Gaming";
+    console.log("Block 2:", hobby);
+}
+
+console.log("Outside:", hobby);
+
+//✅ প্র্যাকটিস ৫: Hoisting (var আগে declare না করেও ব্যবহার করা যায়)
+
+// car="BMW";
+
+// console.log(car);
+
+// var car;
+
+
+//✅ প্র্যাকটিস ৬: let বা const Hoisting করে না
+
+// console.log(a1);
+// let a1 = 5;
+
+
+// console.log(b1);
+// const b1 =10;
 
