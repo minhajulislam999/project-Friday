@@ -240,13 +240,13 @@ console.log(x4);
 //একটি এক্সপ্রেশন (100 + 50) * 2 তৈরি করে result নামক ভেরিয়েবলে রাখো।
 
 {
-    const a = (100/50);
-    console.log(a)
-
-
+    const a = (100/50)*2;
+   
     const result = a;
 
     console.log(result);
 
 }
+
+
 
